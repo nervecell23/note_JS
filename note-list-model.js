@@ -1,16 +1,15 @@
 (function(exports){
     function NotesList() {
-            this.note = []
+            this.noteArray = []
         };
 
         NotesList.prototype.create = function(text){
-          this.note.push(new Note(text))
+          this.noteArray.push(new Note(text))
         };
 
         NotesList.prototype.list = function() {
-            // this.notes.forEach(function(item){
-            //         console.log(item);
-            return this.note
+            
+            return this.noteArray
         }
         exports.NotesList = NotesList;
     })(this);

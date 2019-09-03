@@ -25,9 +25,6 @@ var counter = 0;
   exports.testNotesCreate = testNotesCreate;
 })(this);
 
-
-
-
 counter ++
 testNote();
 counter ++
