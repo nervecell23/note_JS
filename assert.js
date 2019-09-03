@@ -7,6 +7,8 @@ var assert = {
           console.log(counter)
           console.log("Assertion Passed:" + assertionToCheck + " is truthy")
         }
-    }
+    },
+
+    
 };
 

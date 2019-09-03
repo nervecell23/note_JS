@@ -25,7 +25,34 @@ var counter = 0;
   exports.testNotesCreate = testNotesCreate;
 })(this);
 
+(function(exports) {
+
+  function testNotesView() {
+    var notesList = new NotesList();
+    var testString = "<ul><li><div>text1</div></li><li><div>text2</div></li></ul>"
+    notesList.create("text1");
+    notesList.create("text2");
+    notesView = new NotesListView(notesList);
+    assert.isTrue(notesView.view() === testString);
+  
+  }
+
+
+  function testNotesView() {
+    var notesList = new NotesList();
+    // notesList.create("text1");
+    // notesList.create("text2");
+    notesView = new NotesListView(notesList);
+    assert.isTrue(notesView.view() === "<div>No Notes</div>");
+  
+  }
+
+  exports.testNotesView = testNotesView;
+})(this);
+
 counter ++
 testNote();
 counter ++
 testNotesCreate();
+counter ++
+testNotesView();
