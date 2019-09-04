@@ -1,6 +1,4 @@
-var counter = 0;
-
-(function(exports) {  
+(function(exports) {
 
   function testNote() {
       var note = new Note("My favourite language is Javascript");
@@ -8,7 +6,7 @@ var counter = 0;
   };
 
   exports.testNote = testNote;
-  
+
 })(this);
 
 
@@ -18,7 +16,7 @@ var counter = 0;
     var notesList = new NotesList();
     notesList.create("text1")
     notesList.create("text2")
-    assert.isTrue((notesList.list()[0].text === "text1") && 
+    assert.isTrue((notesList.list()[0].text === "text1") &&
     (notesList.list()[1].text === "text2"))
 };
 
@@ -34,7 +32,7 @@ var counter = 0;
     notesList.create("text2");
     notesView = new NotesListView(notesList);
     assert.isTrue(notesView.view() === testString);
-  
+
   }
 
 
@@ -44,15 +42,12 @@ var counter = 0;
     // notesList.create("text2");
     notesView = new NotesListView(notesList);
     assert.isTrue(notesView.view() === "<div>No Notes</div>");
-  
+
   }
 
   exports.testNotesView = testNotesView;
 })(this);
 
-counter ++
 testNote();
-counter ++
 testNotesCreate();
-counter ++
 testNotesView();

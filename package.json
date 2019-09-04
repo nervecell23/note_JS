@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GuyCalloway/notes_app.git"
+    "url": ""
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GuyCalloway/notes_app/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/GuyCalloway/notes_app#readme"
+  "homepage": ""
 }
